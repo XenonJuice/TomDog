@@ -3,8 +3,7 @@ import java.util.Locale;
 import javax.servlet.http.Cookie;
 
 /**
- * copy from apache tomcat
- * -----------------------------
+ * 参考tomcat源码
  * <b>HttpRequest</b> 是对 <code>HttpServletRequest</code> 的封装，
  * 用于处理请求并生成相应的 <code>HttpResponse</code>。
  */
@@ -76,17 +75,17 @@ public interface HttpRequest extends Request {
     void setPathInfo(String path);
 
     /**
-     * 设置是否通过 Cookie 获取请求的会话 ID 标志。
+     * 设置是否通过 Cookie 获取请求的Session ID 标志。
      */
     void setRequestedSessionCookie(boolean flag);
 
     /**
-     * 设置请求的会话 ID。
+     * 设置请求的Session ID。
      */
     void setRequestedSessionId(String id);
 
     /**
-     * 设置是否通过 URL 获取请求的会话 ID 标志。
+     * 设置是否通过 URL 获取请求的Session ID 标志。
      */
     void setRequestedSessionURL(boolean flag);
 

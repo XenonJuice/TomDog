@@ -6,8 +6,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletResponse;
 
 /**
- * copy from apache tomcat
- * -----------------------------
+ * 参考tomcat源码
  * <b>Response</b> 是对 <code>ServletResponse</code> 的封装，
  * 根据对应的 <code>Request</code> 生成响应。
  */

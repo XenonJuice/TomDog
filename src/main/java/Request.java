@@ -7,8 +7,7 @@ import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
 
 /**
- * copy from apache tomcat
- * -----------------------------
+ * 参考tomcat源码
  * <b>Request</b> 是对 <code>ServletRequest</code> 的封装，
  * 用于处理请求并生成相应的 <code>Response</code>。
  */
