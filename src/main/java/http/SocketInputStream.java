@@ -7,12 +7,13 @@ import java.io.InputStream;
  * 扩展 InputStream 以提高在 HTTP 头处理期间读取行的效率。
  *
  * @author LILINJIAN
- * @since 2023/02/27 15:53
+ * @since 2024/11/12 15:53
  */
 public class SocketInputStream extends InputStream {
 
     /**
      * 实例化一个新的 Socket 输入流。
+     *
      * @param inputStream 从Socket读取的输入流
      * @param size        内部缓冲区大小
      */
@@ -42,49 +43,34 @@ public class SocketInputStream extends InputStream {
     protected int pos;
 
     /**
-     * 协议中通常包含的字符
+     * 回车符
      */
-    public enum CharacterConstants {
-        /**
-         * 回车符
-         */
-        CR((byte) '\r'),
+    public static final byte CR = (byte) '\r';
 
-        /**
-         * 换行符
-         */
-        LF((byte) '\n'),
+    /**
+     * 换行符
+     */
+    public static final byte LF = (byte) '\n';
 
-        /**
-         * 空白
-         */
-        SP((byte) ' '),
+    /**
+     * 空白
+     */
+    public static final byte SP = (byte) ' ';
 
-        /**
-         * 水平制表符
-         */
-        HT((byte) '\t'),
+    /**
+     * 水平制表符
+     */
+    public static final byte HT = (byte) '\t';
 
-        /**
-         * 冒号
-         */
-        COLON((byte) ':'),
+    /**
+     * 冒号
+     */
+    public static final byte COLON = (byte) ':';
 
-        /**
-         * 小写偏移
-         */
-        LC_OFFSET('A' - 'a');
-
-        private final int value;
-
-        CharacterConstants(int value) {
-            this.value = value;
-        }
-
-        public int getValue() {
-            return value;
-        }
-    }
+    /**
+     * 小写偏移
+     */
+    public static final int LC_OFFSET = 'A' - 'a';
 
     /**
      * 从输入流中读取字节，将缓冲区填满
@@ -156,7 +142,8 @@ public class SocketInputStream extends InputStream {
         this.inputStream = null;
         this.buffer = null;
     }
+    //TODO
+    // 具体解析实现
 }
 
-//TODO
-// 具体解析实现
+
