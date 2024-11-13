@@ -11,15 +11,17 @@ import javax.servlet.ServletResponse;
  * 根据对应的 <code>Request</code> 生成响应。
  */
 public interface Response {
-  /**
+    //TODO 部分组件未实现
+
+    /**
      * 获取返回响应的连接器。
      */
-  Connector getConnector();
+    //Connector getConnector();
 
     /**
      * 设置返回响应的连接器。
      */
-    void setConnector(Connector connector);
+    // void setConnector(Connector connector);
 
     /**
      * 获取实际写入输出流的字节数。
@@ -29,12 +31,12 @@ public interface Response {
     /**
      * 获取与该响应关联的上下文。
      */
-    Context getContext();
+    // Context getContext();
 
     /**
      * 设置与该响应关联的上下文。
      */
-    void setContext(Context context);
+    // void setContext(Context context);
 
     /**
      * 设置应用程序提交标志。

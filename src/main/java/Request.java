@@ -12,6 +12,7 @@ import javax.servlet.ServletRequest;
  * 用于处理请求并生成相应的 <code>Response</code>。
  */
 public interface Request {
+    //TODO 部分组件未实现
     /**
      * 获取此请求的授权凭据。
      */
@@ -25,22 +26,22 @@ public interface Request {
     /**
      * 获取接收该请求的连接器。
      */
-    Connector getConnector();
+    //Connector getConnector();
 
     /**
      * 设置接收该请求的连接器。
      */
-    void setConnector(Connector connector);
+    //void setConnector(Connector connector);
 
     /**
      * 获取此请求正在处理的上下文。
      */
-    Context getContext();
+    //Context getContext();
 
     /**
      * 设置此请求正在处理的上下文。
      */
-    void setContext(Context context);
+    // void setContext(Context context);
 
     /**
      * 返回此请求实现的信息描述。
@@ -85,12 +86,12 @@ public interface Request {
     /**
      * 获取此请求正在处理的包装器。
      */
-    Wrapper getWrapper();
+    //Wrapper getWrapper();
 
     /**
      * 设置此请求正在处理的包装器。
      */
-    void setWrapper(Wrapper wrapper);
+    // void setWrapper(Wrapper wrapper);
 
     /**
      * 创建并返回用于读取此请求内容的 ServletInputStream。
