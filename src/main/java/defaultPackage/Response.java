@@ -1,3 +1,4 @@
+package defaultPackage;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -7,8 +8,8 @@ import javax.servlet.ServletResponse;
 
 /**
  * 参考tomcat源码
- * <b>Response</b> 是对 <code>ServletResponse</code> 的封装，
- * 根据对应的 <code>Request</code> 生成响应。
+ * <b>defaultPackage.Response</b> 是对 <code>ServletResponse</code> 的封装，
+ * 根据对应的 <code>defaultPackage.Request</code> 生成响应。
  */
 public interface Response {
     //TODO 部分组件未实现

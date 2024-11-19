@@ -1,4 +1,4 @@
-package http;
+package connector.http;
 
 /**
  * 解析HTTP头。

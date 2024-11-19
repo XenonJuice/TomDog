@@ -1,8 +1,10 @@
+package defaultPackage;
+
 import javax.servlet.http.Cookie;
 
 /**
  * 参考tomcat源码
- * <b>HttpResponse</b> 是对 <code>HttpServletResponse</code> 的封装，
+ * <b>defaultPackage.HttpResponse</b> 是对 <code>HttpServletResponse</code> 的封装，
  * 用于处理请求并生成相应的响应。
  */
 public interface HttpResponse extends Response {

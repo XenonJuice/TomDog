@@ -1,15 +1,16 @@
+package defaultPackage;
+
 import java.io.InputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Iterator;
-import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
 
 /**
  * 参考tomcat源码
- * <b>Request</b> 是对 <code>ServletRequest</code> 的封装，
- * 用于处理请求并生成相应的 <code>Response</code>。
+ * <b>defaultPackage.Request</b> 是对 <code>ServletRequest</code> 的封装，
+ * 用于处理请求并生成相应的 <code>defaultPackage.Response</code>。
  */
 public interface Request {
     //TODO 部分组件未实现

@@ -1,11 +1,13 @@
+package defaultPackage;
+
 import java.security.Principal;
 import java.util.Locale;
 import javax.servlet.http.Cookie;
 
 /**
  * 参考tomcat源码
- * <b>HttpRequest</b> 是对 <code>HttpServletRequest</code> 的封装，
- * 用于处理请求并生成相应的 <code>HttpResponse</code>。
+ * <b>defaultPackage.HttpRequest</b> 是对 <code>HttpServletRequest</code> 的封装，
+ * 用于处理请求并生成相应的 <code>defaultPackage.HttpResponse</code>。
  */
 public interface HttpRequest extends Request {
 
